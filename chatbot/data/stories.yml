@@ -1,0 +1,112 @@
+version: "3.1"
+
+stories:
+- story: Salutation et blague
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tell_joke
+  - action: action_tell_joke
+
+- story: Salutation et aide
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: Salutation et départ
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Demande d'aide après salutation
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - intent: affirm
+  - action: utter_happy_to_help
+
+- story: Affirmation de la bonne humeur
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy_for_you
+
+- story: Départ après mauvaise humeur
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Demande d'information sur le bot
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: Demande d'information sur l'année scolaire
+  steps:
+  - intent: ask_school_info
+  - action: utter_school_info
+
+- story: Demande de blague après salutation
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tell_joke
+  - action: action_tell_joke
+
+- story: Demande de blague directe
+  steps:
+  - intent: tell_joke
+  - action: action_tell_joke
+
+- story: Demande de blague par thème
+  steps:
+  - intent: tell_themed_joke
+  - action: utter_ask_joke_theme
+  - slot_was_set:
+      - joke_theme: null
+  - intent: joke_theme
+  - action: action_tell_themed_joke
+
+- story: Demande de liste des capacités
+  steps:
+  - intent: list_capabilities
+  - action: utter_list_capabilities
+
+- story: Demande de backflip
+  steps:
+  - intent: request_backflip
+  - action: action_backflip
+
+rules:
+- rule: Répondre à la salutation
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Répondre au départ
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Répondre à une affirmation positive
+  steps:
+  - intent: affirm
+  - action: utter_happy_to_help
+
+- rule: Répondre à une affirmation négative
+  steps:
+  - intent: deny
+  - action: utter_okay
+
+- rule: Répondre par défaut
+  steps:
+  - action: utter_fallback

@@ -1,0 +1,98 @@
+# Environnement virtuel
+env/
+.venv/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Fichiers et répertoires de configuration de l'éditeur
+.vscode/
+.idea/
+
+# Fichiers spécifiques à macOS
+.DS_Store
+
+# Fichiers spécifiques à Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Fichiers générés par Python
+*.py[cod]
+__pycache__/
+*.so
+
+# Logs et bases de données locales
+*.log
+*.sql
+*.sqlite
+
+# Caches de tests
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Fichiers de distribution
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Fichiers de configuration de pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Caches de tests Pytest
+.pytest_cache/
+
+# Configurations temporaires et fichiers de test
+*.tmp
+*.bak
+*.swp
+*.swo
+*.orig
+*.merged
+
+# Fichiers de configuration de Rasa
+*.lock
+
+# Fichiers de configuration et de sortie de Docker
+*.env
+*.envrc
+.envrc.*
+
+# Docker
+docker-compose.override.yml
+Dockerfile
+
+# Divers
+*.log
+*.csv
+*.out
+*.txt
+
+# Fichiers du chatbot Rasa
+models/
+*.db
+*.tar.gz
+
+# fichier d'environnement
+.env

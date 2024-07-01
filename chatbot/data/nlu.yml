@@ -1,0 +1,481 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - bonjour
+    - salut
+    - bonsoir
+    - coucou
+    - bonjour tout le monde
+    - yo
+    - salut à tous
+    - bonjour à tous
+    - hey tout le monde
+    - salutations
+    - salut mec
+    - hé
+    - salut toi
+    - salut les gens
+    - hé toi
+    - hé là
+    - hey hey
+    - salut salut
+    - bonjour toi
+    - bonjour à tous
+    - salut à tous
+    - salut la compagnie
+    - hello tout le monde
+    - bonjour à tous
+    - bonjour vous
+    - salut vous
+    - hé vous
+    - salut tout le monde
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - au revoir
+    - à plus tard
+    - à bientôt
+    - ciao
+    - bonne nuit
+    - à la prochaine
+    - à plus
+    - à tout à l'heure
+    - adieu
+    - porte-toi bien
+    - on se voit plus tard
+    - à plus dans le bus
+    - salut
+    - bye bye
+    - tchao
+    - à plus mec
+    - à plus tard toi
+    - à une prochaine
+    - bye bye tout le monde
+    - on se parle plus tard
+    - à la revoyure
+    - à plus tout le monde
+    - bonne journée
+    - passe une bonne journée
+    - bon week-end
+    - bon weekend
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - oui
+    - bien sûr
+    - d'accord
+    - absolument
+    - c'est vrai
+    - en effet
+    - évidemment
+    - parfaitement
+    - tout à fait
+    - c'est certain
+    - évidemment que oui
+    - carrément
+    - ouais
+    - ouais ouais
+    - bien entendu
+    - totalement
+    - pourquoi pas
+    - affirmatif
+    - c'est ça
+    - oui oui
+    - tout à fait d'accord
+    - t'as raison
+    - exact
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - non
+    - pas du tout
+    - jamais
+    - je ne pense pas
+    - je n'aime pas ça
+    - en aucun cas
+    - pas vraiment
+    - absolument pas
+    - c'est faux
+    - je ne crois pas
+    - négatif
+    - hors de question
+    - non merci
+    - nope
+    - pas d'accord
+    - c'est pas vrai
+    - pas question
+    - j'aime pas ça
+    - non non
+    - pas du tout d'accord
+    - c'est pas ça
+    - pas possible
+    - niet
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - parfait
+    - génial
+    - incroyable
+    - je me sens comme un roi
+    - merveilleux
+    - je me sens très bien
+    - je vais sauver le monde
+    - super content
+    - extrêmement bien
+    - tellement parfait
+    - tellement bien
+    - au top
+    - excellent
+    - super
+    - ça va très bien
+    - trop bien
+    - ça roule
+    - nickel
+    - je pète la forme
+    - la pêche
+    - la banane
+    - au max
+    - je suis en forme
+    - ça gaze
+    - ça baigne
+    - tout va bien
+    - c'est super
+    - c'est parfait
+    - c'est nickel
+    - top
+    - la grande forme
+    - bien bien
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - ma journée était horrible
+    - je suis triste
+    - je ne me sens pas très bien
+    - je suis déçu
+    - super triste
+    - je suis tellement triste
+    - très triste
+    - pas bien
+    - pas très bien
+    - extrêmement triste
+    - tellement triste
+    - ça ne va pas
+    - je suis abattu
+    - je suis déprimé
+    - je suis malheureux
+    - j'ai le cafard
+    - j'ai le moral à zéro
+    - j'ai le blues
+    - je suis démoralisé
+    - je suis au fond du trou
+    - journée de merde
+    - journée pourrie
+    - je suis abattu
+    - j'en ai marre
+    - je suis crevé
+    - je suis fatigué
+    - c'est pas la forme
+    - pas le moral
+    - je suis à bout
+    - ça va pas
+    - je suis épuisé
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - es-tu un robot ?
+    - es-tu un humain ?
+    - est-ce que je parle à un robot ?
+    - est-ce que je parle à un humain ?
+    - es-tu réel ?
+    - es-tu une machine ?
+    - parles-tu vraiment ?
+    - es-tu vivant ?
+    - es-tu un programme informatique ?
+    - t'es un bot ?
+    - t'es une IA ?
+    - t'es un programme ?
+    - es-tu une intelligence artificielle ?
+    - es-tu un chatbot ?
+    - t'es pas humain toi ?
+    - t'es pas réel ?
+    - est-ce que t'es vraiment là ?
+    - t'es un vrai humain ?
+    - t'es pas un humain ?
+    - t'es un vrai bot ?
+    - t'es un vrai programme ?
+    - es-tu un ordinateur ?
+    - t'es un logiciel ?
+    - t'es un algorithme ?
+    - t'es une application ?
+    - t'es un script ?
+    - est-ce que t'es une vraie personne ?
+    - tu parles vraiment ?
+    - tu es réel ?
+    - t'es vrai ?
+
+- intent: ask_school_info
+  examples: |
+    - Peux-tu me donner des informations sur l'année scolaire à EPSI ?
+    - Quelles sont les dates importantes pour l'année scolaire à EPSI ?
+    - Dis-moi tout sur l'année scolaire à EPSI.
+    - Que dois-je savoir sur l'année scolaire à EPSI ?
+    - Je veux des infos sur l'année scolaire à EPSI.
+    - Quel est le calendrier scolaire pour EPSI ?
+    - Quelles sont les vacances scolaires à EPSI ?
+    - Quand commence l'année scolaire à EPSI ?
+    - Quand finit l'année scolaire à EPSI ?
+    - Quels sont les jours fériés pendant l'année scolaire à EPSI ?
+    - À quelle date commencent les cours à EPSI ?
+    - Peux-tu me donner le planning des examens à EPSI ?
+    - Comment se déroulent les vacances à EPSI ?
+    - Quels sont les événements importants de l'année scolaire à EPSI ?
+    - Quand sont les vacances de Noël à EPSI ?
+    - Quand est la rentrée à EPSI ?
+    - Quelles sont les périodes de stage pour les étudiants d'EPSI ?
+    - Y a-t-il des jours de congé spéciaux à EPSI ?
+    - Quand sont les examens finaux à EPSI ?
+    - Quelles sont les dates des examens à EPSI ?
+    - Quand est la fin des cours à EPSI ?
+    - Quand commence le deuxième semestre à EPSI ?
+    - Quand commencent les vacances d'été à EPSI ?
+    - Quel est le programme des cours à EPSI ?
+    - Quelles sont les périodes de révision à EPSI ?
+    - Quand commencent les vacances de printemps à EPSI ?
+    - Quels sont les jours de congé à EPSI ?
+    - Peux-tu me donner le calendrier académique d'EPSI ?
+    - Quels sont les jours importants de l'année scolaire à EPSI ?
+    - Comment est organisé le semestre à EPSI ?
+    - Quand commencent les cours après les vacances à EPSI ?
+    - J'ai besoin d'infos sur l'année scolaire à EPSI
+    - Tu peux me dire les dates des vacances à EPSI ?
+    - Quels sont les jours fériés à EPSI ?
+    - Quand est-ce que les examens ont lieu à EPSI ?
+    - Quelle est la date de rentrée à EPSI ?
+    - Quand commence l'année à EPSI ?
+    - Quand finissent les cours à EPSI ?
+    - C'est quand la fin de l'année scolaire à EPSI ?
+    - Peux-tu me parler des vacances à EPSI ?
+    - Quels sont les jours sans cours à EPSI ?
+    - Quand sont les examens partiels à EPSI ?
+    - Quels sont les jours de congé à EPSI ?
+    - C'est quand les vacances d'hiver à EPSI ?
+
+- intent: tell_joke
+  examples: |
+    - tell me a joke
+    - do you know a joke?
+    - can you tell me a joke?
+    - I want to hear a joke
+    - joke
+    - tell me something funny
+    - tell me a joke please
+    - tell me a joke now
+    - raconte-moi une blague
+    - dis-moi une blague
+    - connais-tu une blague ?
+    - peux-tu me raconter une blague ?
+    - je veux entendre une blague
+    - blague
+    - dis-moi quelque chose de drôle
+    - raconte-moi une blague s'il te plaît
+    - raconte-moi une blague maintenant
+    - raconte-moi une histoire drôle
+    - raconte-moi une histoire marrante
+    - raconte-moi une histoire rigolote
+    - raconte-moi une histoire amusante
+    - raconte-moi une histoire comique
+    - raconte-moi une histoire drôle s'il te plaît
+    - raconte-moi une histoire marrante s'il te plaît
+    - raconte-moi une histoire rigolote s'il te plaît
+    - raconte-moi une histoire amusante s'il te plaît
+    - raconte-moi une histoire comique s'il te plaît
+    - raconte-moi une histoire drôle maintenant
+    - raconte-moi une histoire marrante maintenant
+    - raconte-moi une histoire rigolote maintenant
+    - raconte-moi une histoire amusante maintenant
+    - raconte-moi une histoire comique maintenant
+    - peux-tu me raconter une histoire drôle ?
+    - peux-tu me raconter une histoire marrante ?
+    - peux-tu me raconter une histoire rigolote ?
+    - peux-tu me raconter une histoire amusante ?
+    - peux-tu me raconter une histoire comique ?
+    - tu peux me raconter une blague ?
+    - tu connais une blague ?
+    - je veux une blague
+    - fais-moi rire
+    - dis quelque chose de drôle
+    - dis une blague
+    - une blague s'il te plaît
+    - tu sais une blague ?
+    - raconte une blague
+    - blague maintenant
+    - balance une blague
+    - balance une vanne
+    - fais-moi une vanne
+    - dis-moi une vanne
+    - balance un truc marrant
+    - dis-moi un truc marrant
+    - tu as une blague ?
+    - t'as une blague pour moi ?
+    - t'as pas une blague ?
+    - allez, une blague
+    - une blague pour moi
+    - dis-moi quelque chose de rigolo
+    - fais-moi marrer
+    - raconte une vanne
+    - une histoire drôle s'il te plaît
+    - balance une histoire drôle
+    - t'as une histoire marrante ?
+    - t'as pas une histoire drôle ?
+    - dis-moi une vanne rigolote
+    - dis-moi un truc rigolo
+    - fais-moi une histoire drôle
+    - raconte un truc marrant
+    - raconte un truc drôle
+    - raconte-moi un truc rigolo
+    - raconte-moi un truc drôle
+
+- intent: tell_themed_joke
+  examples: |
+    - tell me a joke about [blondes](joke_theme)
+    - do you know a joke about [belges](joke_theme)?
+    - can you tell me a joke about [animaux](joke_theme)?
+    - I want to hear a joke about [enfants](joke_theme)
+    - tell me something funny about [médecins](joke_theme)
+    - raconte-moi une blague sur les [blondes](joke_theme)
+    - dis-moi une blague sur les [belges](joke_theme)
+    - connais-tu une blague sur les [animaux](joke_theme) ?
+    - peux-tu me raconter une blague sur les [enfants](joke_theme) ?
+    - je veux entendre une blague sur les [médecins](joke_theme)
+    - blague sur les [blondes](joke_theme)
+    - balance une blague sur les [belges](joke_theme)
+    - une blague sur les [animaux](joke_theme) s'il te plaît
+    - tu sais une blague sur les [enfants](joke_theme) ?
+    - raconte une blague sur les [médecins](joke_theme)
+    - une blague sur les [geeks](joke_theme)
+    - raconte une blague sur les [sport](joke_theme)
+    - balance une blague sur les [informatique](joke_theme)
+
+- intent: joke_theme
+  examples: |
+    - blondes
+    - belges
+    - animaux
+    - enfants
+    - médecins
+    - informatique
+    - sport
+    - geeks
+    - politiques
+    - histoire
+    - science
+    - musique
+    - métiers
+    - couples
+    - famille
+    - école
+    - travail
+    - vacances
+    - alimentation
+    - star wars
+    - ta mère
+    - monsieur et madame
+    - geeks
+    - blagues sur les geeks
+    - geeks blagues
+
+- intent: list_capabilities
+  examples: |
+    - What can you do?
+    - List your capabilities
+    - What are your skills?
+    - What services do you offer?
+    - Dis-moi ce que tu sais faire
+    - Quelles sont tes capacités ?
+    - Que peux-tu faire ?
+    - que sais-tu faire ?
+    - tu sais faire quoi ?
+    - Liste des fonctionnalités
+    - Montre-moi ce que tu peux faire
+
+- intent: request_backflip
+  examples: |
+    - Do a backflip
+    - Can you do a backflip?
+    - Show me a backflip
+    - Fais un backflip
+    - Peux-tu faire un backflip ?
+    - Montre-moi un backflip
+    - Fais-moi un backflip
+    - Peux-tu faire un backflip pour moi ?
+    - backflip

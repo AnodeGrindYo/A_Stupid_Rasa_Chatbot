@@ -1,0 +1,20 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-joke_theme",
+      "2": "I-joke_theme",
+      "3": "L-joke_theme",
+      "4": "U-joke_theme",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-joke_theme": 1,
+      "I-joke_theme": 2,
+      "L-joke_theme": 3,
+      "U-joke_theme": 4,
+      "O": 0
+    },
+    "num_tags": 5
+  }
+]

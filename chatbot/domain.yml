@@ -1,0 +1,68 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_school_info
+  - tell_joke
+  - tell_themed_joke
+  - list_capabilities
+  - request_backflip
+  - joke_theme
+  - nlu_fallback
+
+slots:
+  joke_theme:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: joke_theme
+
+responses:
+  utter_greet:
+    - text: "Salut, l'ami ! Comment puis-je égayer ta journée aujourd'hui ? 😃"
+  utter_goodbye:
+    - text: "À plus tard, crocodile ! 🐊"
+  utter_cheer_up:
+    - text: "Ne t'inquiète pas, même les biscuits cassés font des bons morceaux ! 🍪 Que puis-je faire pour toi ?"
+  utter_happy_for_you:
+    - text: "C'est fantastique ! Continue à briller comme une étoile ! ✨"
+  utter_happy_to_help:
+    - text: "Avec plaisir ! Je suis toujours là pour toi, comme un super-héros masqué ! 🦸"
+  utter_iamabot:
+    - text: "Oui, je suis un bot. Mais pas n'importe quel bot, je suis le bot le plus cool de cette galaxie ! 🚀"
+  utter_okay:
+    - text: "D'accord, pas de souci ! Fais-moi signe si tu as besoin de quelque chose. 👌"
+  utter_school_info:
+    - text: "Va-donc voir sur https://www.epsi.fr/ pour toutes les informations sur l'année scolaire à EPSI ! 🎓"
+  utter_ask_joke_theme:
+    - text: "Quel type de blague aimerais-tu entendre ? (ex : belges, blondes, histoires drôles, etc.)"
+  utter_list_capabilities:
+    - text: "Je peux te raconter des blagues, te donner des informations sur l'année scolaire à EPSI, et même faire un backflip ! Que veux-tu que je fasse ?"
+  utter_fallback:
+    - text: "Mais je n'en sais absolument rien. Demande à ChatGPT et laisse-moi tranquille !"
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_cheer_up
+  - utter_happy_for_you
+  - utter_happy_to_help
+  - utter_iamabot
+  - utter_okay
+  - utter_school_info
+  - utter_ask_joke_theme
+  - utter_list_capabilities
+  - utter_fallback
+  - action_tell_joke
+  - action_tell_themed_joke
+  - action_backflip
+
+entities:
+  - joke_theme
