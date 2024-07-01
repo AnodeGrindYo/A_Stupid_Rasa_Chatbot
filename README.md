@@ -1,4 +1,6 @@
-# JokeBot README.md 🤖
+# JokeBot 🤖
+
+![](./chatbot/img/jokebot.png)
 
 ## Bienvenue dans l'univers de JokeBot !
 
@@ -113,3 +115,5 @@ En suivant ces instructions, vous pouvez facilement personnaliser JokeBot pour r
 ---
 
 Fait avec ❤️ et beaucou de 😜
+
+![](./chatbot/img/jokebot_illustration.png)
