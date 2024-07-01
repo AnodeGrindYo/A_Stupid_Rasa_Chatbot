@@ -2,7 +2,7 @@
 
 ## Bienvenue dans l'univers de JokeBot !
 
-Si vous avez toujours rêvé de parler à un chatbot qui raconte des blagues (pas toujours drôles), donne des informations sur l'année scolaire à EPSI et peut même tenter de faire des backflips numériques, alors vous êtes au bon endroit. JokeBot est là pour vous faire rire... ou du moins essayer. 🙃
+Si vous avez toujours rêvé de parler à un chatbot qui raconte des blagues (pas toujours drôles), donne des informations sur l'année scolaire à EPSI (bon, en fait il vous demande d'aller chercher les informations vous-même) et peut même tenter de faire des backflips, alors vous êtes au bon endroit. JokeBot est là pour vous faire rire... ou du moins essayer. 🙃
 
 ### Installation et configuration
 
@@ -84,6 +84,8 @@ Voici un aperçu des principaux fichiers de JokeBot et comment vous pouvez les p
 - **endpoints.yml** : Configure l'URL pour le serveur d'actions du bot. Assurez-vous que cette URL est correcte pour que les actions personnalisées fonctionnent.
 
 ### Personnaliser JokeBot
+
+Si jamais vous voulez modifier ce chatbot, par exemple pour en faire quelque chose de vaguement plus utile :
 
 1. **Ajouter une nouvelle blague**
     - Ouvrez `actions/actions.py`.
